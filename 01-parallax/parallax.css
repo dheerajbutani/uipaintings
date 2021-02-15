@@ -1,0 +1,45 @@
+body, html {
+  height: 100%;
+}
+.caption{
+	  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border{
+	  background-color: #fff;
+    color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.parallax-1 {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-2 {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
