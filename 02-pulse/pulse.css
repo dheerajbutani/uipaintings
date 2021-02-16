@@ -1,0 +1,104 @@
+body, html {
+  height: 100%;
+}
+.caption{
+	  position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border{
+	  background-color: #fff;
+    color: #111;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+.parallax-1 {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-2 {
+  /* The image used */
+  background-image: url('https://cdn.pixabay.com/photo/2015/12/01/20/28/road-1072823_960_720.jpg');
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+*{
+	box-sizing:border-box;
+}
+.container{
+	width:100vw;
+	height:100vh;
+	background-color:black;
+	justify-content:center;
+	
+}
+.center{
+	position:absolute;
+	top:50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+}
+.pulsebutton{
+	background-color:#177c80;
+	color:white;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+	text-align:center;
+	line-height:100px;
+	text-transform: uppercase;
+	animation: pulser 3s linear infinite;
+}
+@keyframes pulser{
+	0%
+    {
+		
+        box-shadow: 0 0 0 0 rgba(55, 209, 201, 0.7), 0 0 0 0 rgba(24, 153, 104, 0.7);
+			
+    }
+    40%
+    {
+        box-shadow: 0 0 0 30px rgba(55, 209, 201, 0), 0 0 0 0 rgba(55, 209, 201, 0.7);
+			
+    }
+    80%
+    {
+        box-shadow: 0 0 0 30px rgba(55, 209, 201, 0), 0 0 0 30px rgba(55, 209, 201, 0);
+    }
+    100%
+    {
+        box-shadow: 0 0 0 0 rgba(55, 209, 201, 0), 0 0 0 30px rgba(55, 209, 201, 0);
+    }
+}
+//script
+//let but=document.querySelector('.pulsebutton');
+
+//but.addEventListener('click',(e)=>{
+//	if(but.classList.contains('anime')){
+//		
+//	}
+//	else{
+//	but.classList.add('anime');
+//	}
+//})
